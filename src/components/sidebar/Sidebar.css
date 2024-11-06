@@ -155,3 +155,28 @@ ul {
 .icon-tooltip:hover::after {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .sidebar-toggle-button {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10000; /* Ensure button is above other elements */
+  }
+  .sidebar {
+
+  width: 133%;
+  background-color: #f2f3f7;
+  overflow-y: scroll;
+  text-align: center;
+  padding-top: 40px;
+  }
+}
+
