@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+.image {
+  height: 50vh; /* Adjusted for better responsiveness */
+  object-fit: cover;
+}
+
+.h1, .h2 {
+  margin: 20px;
+  font-size: 2rem;
+  font-family: 'Permanent Marker', cursive;
+  animation-name: text;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  position: absolute;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+}
+
+.h1 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.h2 {
+  color: #333;
+}
+
+.h1 a, .h2 a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  font-family: 'Permanent Marker', cursive;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 22px;
+  background-image: linear-gradient(to left, rgba(75, 19, 79, 0.8), rgba(201, 75, 75, 0.6));
+  box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.h1 a:hover, .h2 a:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 35px 0px rgba(21, 10, 82, 0.5);
+}
+
+@keyframes text {
+  from {
+    transform: translateY(20px);
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .image {
+    height: 50vh;
+  }
+  .h1, .h2 {
+    font-size: 1.5rem;
+  }
+  .h1 a, .h2 a {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .image {
+    height: 45vh;
+  }
+  .h1, .h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .h1 a, .h2 a {
+    font-size: 0.8rem;
+    padding: 7px 18px;
+  }
+}

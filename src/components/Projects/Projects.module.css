@@ -1,0 +1,96 @@
+.container {
+  margin: 15px;
+  margin-top: 40px;
+}
+
+.header {
+  display: inline-block;
+  padding: 0px 12px;
+  color: #555;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+.title {
+  padding: 0px 12px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));  /* Reduced the minimum size */
+  gap: 2rem;  /* Reduced gap between cards */
+  margin: 4rem 2vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cardItem {
+  display: block;
+  border-radius: 21px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardItem:hover {
+  transform: translateY(-8px);  /* Reduced hover transform */
+}
+
+.card {
+  display: block;
+  position: relative;
+  border-radius: 21px 21px 0px 0px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;  /* Reduced image height */
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardImage:hover {
+  opacity: 0.85;
+}
+
+.cardTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;  /* Reduced padding */
+  background-color: #fff;
+  border-radius: 0px 0px 21px 21px;
+  color: #333;
+}
+
+.cardTitle {
+  font-size: 16px;  /* Reduced title font size */
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.cardTitleImg {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

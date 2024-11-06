@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700|Permanent+Marker&display=swap');
+
+/* Container Styling */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* Section Headings */
+.head {
+  font-family: 'Permanent Marker', cursive;
+  display: inline-block;
+  color: #333;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  font-size: 18px;
+  border-bottom: 3px solid #de1db4;
+}
+
+.heading {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+/* Grid Layout for Expertise Sections */
+.Interest {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card Styles for Each Expertise Section */
+.app,
+.other,
+.web {
+  padding: 30px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects */
+.app:hover,
+.other:hover,
+.web:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Color Accents for Each Card Type */
+.app {
+  border-bottom: 4px solid #f9bf3f;
+}
+
+.other {
+  border-bottom: 4px solid #2fa499;
+}
+
+.web {
+  border-bottom: 4px solid #2c98f0;
+}
+
+/* Typography for Expertise Titles and Descriptions */
+div > h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 20px 0;
+}
+
+div > p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes text {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1027px) {
+  .Interest {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 769px) {
+  .box {
+    text-align: center;
+  }
+  .Interest {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head {
+    font-size: 16px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  div > h3 {
+    font-size: 18px;
+  }
+  div > p {
+    font-size: 14px;
+  }
+}
