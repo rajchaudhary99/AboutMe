@@ -75,7 +75,7 @@ class Education extends Component {
                 </div>
                 <div className={classes.label}>
                   <h2>
-                    ReactJS Internship <span>Summer 2023</span>
+                    ReactJS Internship <span>Winter 2024</span>
                   </h2>
                   <p>
                     Completed a two-month intensive internship at DevStrigX Technology, where I developed responsive web applications using ReactJS, Redux, and modern frontend technologies.
